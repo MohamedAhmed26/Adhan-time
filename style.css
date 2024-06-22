@@ -66,8 +66,6 @@ body {
 }
 .sel:focus {
     outline: none;
-    border: none;
-    
 }
 .sel option {
     color: #000;

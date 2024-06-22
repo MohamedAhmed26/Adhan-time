@@ -34,7 +34,7 @@ function playApi(cityNamee) {
         country: "EG",
         city: cityNamee,
     };
-    axios.get("http://api.aladhan.com/v1/timingsByCity?country=EG&city=Tanta", {
+    axios.get("http://api.aladhan.com/v1/timingsByCity", {
             params: params,
         })
         .then((response) => {
