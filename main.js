@@ -34,12 +34,10 @@ function playApi(cityNamee) {
         country: "EG",
         city: cityNamee,
     };
-    axios
-        .get("http://api.aladhan.com/v1/timingsByCity?country=EG&city=Tanta", {
+    axios.get("http://api.aladhan.com/v1/timingsByCity?country=EG&city=Tanta", {
             params: params,
         })
         .then((response) => {
-            console.log(response.data.data.timings);
             let mainDate = document.getElementsByClassName("date")[0];
             let timing = response.data.data.timings;
             let dayDate = response.data.data.date.gregorian.date;
