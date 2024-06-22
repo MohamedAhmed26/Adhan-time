@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aladan</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="parent">
+        <div class="main">
+            <h1 class="city">طنطا</h1>
+            <p class="date"></p>
+        </div>
+        <div class="boxes">
+            <div class="box">
+                <h2>الفجر</h2>
+                <p id="fajr"></p>
+            </div>
+            <div class="box">
+                <h2>الشروق</h2>
+                <p id="shrouq"></p>
+            </div>
+            <div class="box">
+                <h2>الضهر</h2>
+                <p id="dohr"></p>
+            </div>
+            <div class="box">
+                <h2>العصر</h2>
+                <p id="asr"></p>
+            </div>
+            <div class="box">
+                <h2>المغرب</h2>
+                <p id="magrb"></p>
+            </div>
+            <div class="box">
+                <h2>العشاء</h2>
+                <p id="ashaa"></p>
+            </div>
+        </div>
+        <select class="sel" id="sel">
+            <option class="opt"  value="طنطا">طنطا</option>
+            <option class="opt"  value="اسكندريه">اسكندريه</option>
+            <option class="opt"  value="القاهره">القاهره</option>
+            <option class="opt"  value="دمياط">دمياط</option>
+            <option class="opt"  value="المنصوره">المنصوره</option>
+            <option class="opt"  value="مرسي مطروح">مرسي مطروح</option>
+            <option class="opt"  value="المنيا">المنيا</option>
+            <option class="opt"  value="أسوان">أسوان</option>
+            <option class="opt"  value="شبين الكوم">شبين الكوم</option>
+        </select>
+    </div>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
